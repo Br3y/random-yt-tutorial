@@ -1,3 +1,3 @@
 # travsCrashCourse
 
-# this is to copy traversy media crash course and to absorb different types information to web development
+# this is to learn from traversy media crash course and to absorb different types information for full stack web development

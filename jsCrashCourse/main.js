@@ -73,26 +73,101 @@ const s = "Hello World";
 // person.email = 'john@gmail.com';
 // console.log(person);
 
-// Arrays of Object
+// Arrays of Object & JSON
 
-const todos = [
-    {
-        id:1,
-        text: 'Take out trash',
-        isCompleted: true
-    },
-    {
-        id:2,
-        text: 'Meeting with boss',
-        isCompleted: true
-    },
-    {
-        id:13,
-        text: 'Dentist appt',
-        isCompleted: false
-    }
-];
-// console.log(todos);
+// const todos = [
+//     {
+//         id: 1,
+//         text: 'Take out trash',
+//         isCompleted: true,
+//     },
+//     {
+//         id: 2,
+//         text: 'Meeting with boos',
+//         isCompleted: true,
+//     },
+//     {
+//         id: 3,
+//         text: 'Dentist appt',
+//         isCompleted: false,
+//     }
+// ]
 // console.log(todos[1].text);
-const todoJSON = JSON.stringify(todos);
-console.log(todoJSON);
+// convert to JSON
+// const todoJSON = JSON.stringify(todos);
+// console.log(todoJSON);
+
+// for loop
+// for (let i = 0; i < todos.length; i++) {
+//     console.log(todos[i].text);
+// }
+// for(let todo of todos){
+//     console.log(todo.text);
+// }
+// while loop
+// let i = 0;
+// while (i < 10) {
+//     console.log(`While Loop Number: ${i}`);
+//     i++;
+// }
+
+// forEach, map, filter
+
+// todos.forEach(function(todo){
+//     console.log(todo.text);
+// });
+// const todoText = todos.map(function(todo){
+//     return todo.text;
+// });
+// console.log(todoText);
+
+// filter with map
+// const todoCompleted = todos.filter(function(todo){
+//     return todo.isCompleted === true;
+// }).map(function(todo){
+//     return todo.text;
+// })
+// console.log(todoCompleted);
+
+// if statement and ||, &&, !
+// const x = 4;
+// const y = 11;
+
+// if(x > 5 || y > 10){
+//     console.log('x is 10');
+// } else if(x > 10){
+//     console.log('x is greater than 10');
+// } 
+// else {
+//     console.log('x is NOT 10');
+// }
+
+// shorthand if statement
+const x = 9;
+// const color = x > 10 ? "red" : "blue";
+const color = "green";
+// console.log(color);
+
+// switch(color){
+//     case 'red':
+//         console.log("color is red");
+//         break;
+//     case 'blue':
+//         console.log("color is blue");
+//         break;
+//     default:
+//         console.log("color is NOT read or blue");
+//         break;
+// }
+
+// function
+// function addNums(num1 = 0, num2 = 0){
+//     return num1 + num2;
+// }
+// console.log(addNums(5, 5));
+
+// arrow function
+const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+console.log(addNums());
+
+// todos.forEach((todo) => console.log(todo));

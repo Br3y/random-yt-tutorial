@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
 body {
@@ -27,13 +27,30 @@ a:hover{
 a:active{
     color:green;
 }
-a:visited{
+/* a:visited{
     color:rgb(73, 73, 73);
-}
+} */
 
 .container {
   width: 80%;
   margin: auto;
+}
+
+.button{
+    background-color:#333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background:red;
+    color:#fff;
+}
+
+.clr{
+    clear:both;
+    margin-bottom: 15px;
 }
 .box-1 {
   background-color: #333;
@@ -94,4 +111,91 @@ a:visited{
 .categories li{
     padding-bottom: 8px;
     border-bottom: dotted 1px #333;
+}
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type='text'], .my-form textarea, .my-form input[type='email']{
+    padding:8px;
+    width:100%;
+}
+
+.block{
+    float:left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width:70%;
+    padding:15px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float:right;
+    width:30%;
+    background-color:#333;
+    color:#fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border:1px solid #000;
+    margin-top:30px;
+    position:relative;
+    background-image:url("https://static.vecteezy.com/system/resources/thumbnails/003/712/202/small/neon-wave-abstract-background-dynamic-wave-and-light-motion-background-design-template-free-vector.jpg");
+    background-position:100px 200px;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.p-box h1{
+    position:absolute;
+    top:100px;
+    left:200px;
+}
+
+.p-box h2{
+    position:absolute;
+    bottom:40px;
+    right:100px;
+}
+
+.fix-me{
+    position:fixed;
+    top:1px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+.my-list li:nth-child(3){
+    background: yellow;
+}
+.my-list li:nth-child(5){
+    background: green;
+}
+.my-list li:last-child{
+    background:blue;
+}
+.my-list li:nth-child(even){
+    background:gray;
 }

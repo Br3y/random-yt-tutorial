@@ -168,6 +168,125 @@ const color = "green";
 
 // arrow function
 const addNums = (num1 = 1, num2 = 1) => num1 + num2;
-console.log(addNums());
+// console.log(addNums());
 
 // todos.forEach((todo) => console.log(todo));
+
+// Constructor functions and prototype
+// function Person(firstName, lastName, dob){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//can be used using person.prototype
+//     this.getBirthYear = function(){
+//         return this.dob.getFullYear();
+//     }
+//     this.getFullName = function(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// Person.prototype.getBirthYear = function(){
+//     return this.dob.getFullYear();
+// }
+// Person.prototype.getFullName = function(){
+//     return `${this.firstName} ${this.lastName}`;
+// }
+
+// Instantiate object
+// const person1 = new Person("John", 'Doe', '4-3-1980');
+// const person2 = new Person("May", 'Smith', '3-6-1920');
+
+// console.log(person1.getBirthYear())
+// console.log(person2.getFullName())
+// console.log(person1);
+
+// ES6 Classes (prettier way to create --constructor function and prototype--)
+
+// class Person {
+//     constructor(firstName, lastName, dob){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob);
+//     }
+//     getBirthYear(){
+//         return this.dob.getFullYear();
+//     }
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+// const person1 = new Person("Aubrey", "Lizardo", "5-8-1999");
+
+// console.log(person1.getFullName());
+
+
+// DOM
+
+// Single Element
+// console.log(document.getElementById("my-form"));
+// const form = document.getElementById("my-form");
+// console.log(form);
+// console.log(document.querySelector(".container"));
+// Multiple Element
+// console.log(document.querySelectorAll(".item"));
+// older version and recomment queryselectorall to use often
+// console.log(document.getElementsByClassName("item"));
+// console.log(document.getElementsByTagName("ul"));
+// const items = document.querySelectorAll(".item");
+// items.forEach((item) => console.log(item));
+
+// manipulating DOM 
+// const ul = document.querySelector('.items');
+
+// // ul.remove();
+// // ul.lastElementChild.remove();
+// ul.firstElementChild.textContent = "Hello";
+// ul.children[1].innerText = 'Brad';
+// ul.lastElementChild.innerHTML = "<h4>Hello</h4>"
+// btn.style.background = 'red';
+
+// Events
+// const btn = document.querySelector('.btn');
+// btn.addEventListener("click", function(event){
+//     event.preventDefault();
+//     // console.log("click");
+//     // console.log(event.target);
+//     document.querySelector("#my-form").style.background = "#ccc";
+//     document.querySelector('body').classList.add('bg-dark');
+//     const ul = document.querySelector(".items");
+//     ul.lastElementChild.innerHTML = '<h1>Hello</h1>'
+// });
+
+// manipulate form
+const myForm = document.querySelector("#my-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const msg = document.querySelector(".msg");
+const userList  = document.querySelector("#users");
+
+myForm.addEventListener("submit", onSubmit);
+
+function onSubmit(event){
+    event.preventDefault();
+    // console.log(nameInput.value);
+    if(nameInput.value === "" || emailInput === ""){
+        msg.classList.add("error");
+        msg.innerHTML = "Please enter fields";
+
+        // setTimeout(function(){
+        //     msg.remove(); 
+        // }, 3000);
+        setTimeout(()=> msg.remove(), 3000);
+        // alert("Please enter fields");
+    } else{
+        // console.log("success");
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+        userList.appendChild(li);
+        
+        // clear fields
+        nameInput.value = "";
+        emailInput.value = "";
+    }
+}

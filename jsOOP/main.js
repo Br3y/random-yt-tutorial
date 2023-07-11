@@ -139,3 +139,87 @@
 
 // console.log(dict1);
 // console.log(dict1.summary());
+
+
+
+// OBJECT CREATE
+// const bookProtos = {
+//     getSummary: function(){
+//         return `this is the summary of myDictionary ${this.name}, ${this.meaning}, ${this.alternative}`;     
+//     },
+//     getAge: function(){
+//         const years = new Date().getFullYear() - this.year;
+//         return `${this.title} is ${years} years old`;
+//     }
+// }
+// CREATE OBJECT
+// const book1 = Object.create(bookProtos);
+// book1.title = 'Book One';
+// book1.author = 'John';
+// book1.year = '2013';
+// const book1 = Object.create(bookProtos, {
+//     title: {value:'Book One'},
+//     author: {value: 'John'},
+//     year: {value: '2013'}
+// });
+// console.log(book1);
+
+
+
+// es6 classes
+// class Book{
+//     constructor(title, author, year){
+//         this.title = title;
+//         this.author = author;
+//         this.year = year;
+//     }
+
+//     getSummary(){
+//         return `${this.title} was written by ${this.author} in ${this.year}`;
+//     }
+//     getAge(){
+//         const years = new Date().getFullYear() - this.year;
+//         return `${this.title} is ${years} years old`;
+//     }
+//     revise(newYear){
+//         this.year = newYear;
+//         this.revised = true;
+//     }
+
+//     static topBookStore(){
+//         return 'Barnes & Noble';
+//     }
+// }
+
+// // Instantiate Object
+// const book1 = new Book('Book one', 'John', '2013');
+// // console.log(book1);
+// // book1.revise("2018")
+// // console.log(book1);
+// console.log(Book.topBookStore());
+
+// subclasses
+// class Book{
+//     constructor(title, author, year){
+//         this.title = title;
+//         this.author = author;
+//         this.year = year;
+//     }
+//     getSummary(){
+//         return `${this.title} was written by ${this.author} in ${this.year}`;
+//     }
+
+// }
+
+// // Magazine Subclass
+// class Magazine extends Book{
+//     constructor(title, author, year, month){
+//         super(title, author, year);
+//         this.month = month;
+//     }
+// }
+
+// // Instantiate Magazine
+// const mag1 = new Magazine("Mag One", 'John Doe', '2018', 'Jan');
+// console.log(mag1);
+// console.log(mag1.getSummary());

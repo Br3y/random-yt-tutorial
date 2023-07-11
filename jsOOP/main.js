@@ -103,12 +103,39 @@
 //     Book.call(this, title, author, year);
 //     this.month = month;   
 // }
+
+// // Inherit Prototype
 // Magazine.prototype = Object.create(Book.prototype); 
 // // instantiate magazine object
 // const mag1 = new Magazine('Mag One', 'John Mic', '2018', 'Jan');
-
 // // user magazine constructor
 // Magazine.prototype.constructor = Magazine;
-// // Inherit Prototype
+
 // console.log(mag1);
 // console.log(mag1.getSummary());
+
+
+// my Practice
+// function myDictionary(name, meaning, alternative){
+//     this.name = name;
+//     this.meaning = meaning;
+//     this.alternative = alternative;
+// }
+// myDictionary.prototype.summary = function(){
+//     return `this is the summary of myDictionary ${this.name}, ${this.meaning}, ${this.alternative}`;
+// }
+// const dictionary1 = new myDictionary("human", "highest species in earth ", "ningen");
+// console.log(dictionary1);
+// console.log(dictionary1.summary());
+
+// function dictionaryWithDate(name, meaning, alternative, yearDate){
+//     myDictionary.call(this, name, meaning, alternative);
+//     this.yearDate = yearDate;
+// }
+
+// dictionaryWithDate.prototype = Object.create(myDictionary.prototype);
+// const dict1 = new dictionaryWithDate("dict1", "dictionary 1", "dictionary", "2018");
+// dictionaryWithDate.prototype.constructor = dictionaryWithDate;
+
+// console.log(dict1);
+// console.log(dict1.summary());

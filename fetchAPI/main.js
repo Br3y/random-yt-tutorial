@@ -12,7 +12,7 @@ function getText(){
     // .catch(function(error){
     //     console.log(error);
     // })
-    // // return a promise, placeholder for a response
+    // //return a promise, placeholder for a response
     // fetch('sample.txt')
 
     // // using arrow function (same as above but shorter)

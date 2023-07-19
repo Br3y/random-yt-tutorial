@@ -18,6 +18,7 @@ body{
     /* cross axis */
     /* align-items: start; */
     /* height:400px; */
+    /* flex-wrap:wrap; */
 }
 
 /* Before Flexbox created style */
@@ -28,6 +29,10 @@ body{
 } */
 
 .item{
+    /* flex : grow / shrink / basis */
+    flex:1;
+    /* flex-basis:450px; */
+    /* flex-grow:1; */
     width:100px;
     height:100px;
     background:#254de4;
@@ -39,12 +44,22 @@ body{
     align-items: center;
 }
 
-/* .item:nth-child(1){
-    align-self:start;
+.item:nth-child(1){
+    /* order:3; */
+    /* flex-grow:1; */
+    /* flex-shrink:1; */
+    /* align-self:start; */
 }
 .item:nth-child(2){
-    align-self:center;
+    /* order:1; */
+    /* flex-grow:1; */
+    /* flex-shrink:2; */
+    /* align-self:center; */
 }
 .item:nth-of-type(3){
-    align-self:end;
-} */
+    /* order:2; */
+    /* flex-grow:2; */
+    /* flex-shrink:3; */
+    /* align-self:end; */
+    /* flex-basis:200px; */
+}

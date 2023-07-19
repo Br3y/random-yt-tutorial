@@ -11,6 +11,13 @@ body{
 .flex-container{
     display:flex;
     background-color:#f4f4f4;
+    /* main axis */
+    /* justify-content:space-around;  */
+    /* align-items:center; */
+    /* flex-direction:column; */
+    /* cross axis */
+    /* align-items: start; */
+    /* height:400px; */
 }
 
 /* Before Flexbox created style */
@@ -27,4 +34,17 @@ body{
     margin:10px;
     color:white;
     /* float:left; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* .item:nth-child(1){
+    align-self:start;
+}
+.item:nth-child(2){
+    align-self:center;
+}
+.item:nth-of-type(3){
+    align-self:end;
+} */

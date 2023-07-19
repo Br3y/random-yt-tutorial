@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display:flex;
+    background-color:#f4f4f4;
+}
+
+/* Before Flexbox created style */
+/* .flex-container::after{
+    content: "";
+    clear:both;
+    display:block;
+} */
+
+.item{
+    width:100px;
+    height:100px;
+    background:#254de4;
+    margin:10px;
+    color:white;
+    /* float:left; */
+}

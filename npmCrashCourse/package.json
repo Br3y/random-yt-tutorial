@@ -1,0 +1,19 @@
+{
+  "name": "npmcrashcourse",
+  "version": "1.0.0",
+  "description": "# npm init --yes | - y ( auto create the default without asking ) # npm config set init-author-name \"yourName\" ( changing the default for the author ) # npm set init-license \"MIT\" ( changing the default for license )",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

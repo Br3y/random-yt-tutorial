@@ -1,9 +1,8 @@
 // sudo npm i -g sass ( install sass )
 // sass --watch scss/style.scss css/style.css ( directory while watching )
-
-$font-stack:Arial, Helvetica, sans-serif;
-$light-color: #f4f4f4;
-
+@import 'config';
+@import 'utilities';
+@import 'buttons';
 *{
     box-sizing:border-box;
     margin:0;
@@ -14,3 +13,57 @@ body{
     font-family:$font-stack;
     line-height: 1.6;
 }
+img{
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+.showcase{
+    @include set-background($primary-color);
+    background-color: $primary-color;
+    // color:white;
+    color:set-text-color($primary-color);
+    height:600px;
+
+    nav {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display:flex;
+            list-style-type: none;
+        }
+        li{
+            padding:15px;
+        }
+        a:hover{
+            color:$secondary-color;
+        }
+    }
+    a{
+        // color:#fff;
+        color:set-text-color($primary-color);
+    }
+    &-content{
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
+        img{
+            width:50%;
+        }
+        h1{
+            font-size:50px;
+            line-height: 1.2;
+        }
+        p{
+            margin: 20px 0;
+        }
+    }
+}
+
+
+@import 'mobile';

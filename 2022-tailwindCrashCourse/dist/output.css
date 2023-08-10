@@ -990,6 +990,10 @@ video {
     flex-direction: column;
   }
 
+  .md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }

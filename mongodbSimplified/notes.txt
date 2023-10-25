@@ -1,0 +1,33 @@
+mongosh
+
+exit
+
+use appdb
+
+db.dropDatabase()
+
+show collections
+
+showdbs
+
+db.users.insertOne({ name: 'John' })
+
+db.users.find()
+
+db.users.insertOne({ name: 'Sally', age:19, address:{street: '987 North St'}, hobbies: ['Running']})
+
+db.users.find()
+
+db.users.insertMany([{ name: 'Jill'}, { name: 'Mike' }])
+
+db.users.find()
+
+db.users.find().limit(2)
+
+db.users.find().sort({ name: 1}).limit(2)
+
+db.users.find().skip(1).limit(2)
+
+db.users.find({ name: 'John' })
+
+db.users.find({name : "Sally"}, {address: 0, age: 0})

@@ -4,6 +4,8 @@ exit
 
 use appdb
 
+cls
+
 db.dropDatabase()
 
 show collections
@@ -31,3 +33,73 @@ db.users.find().skip(1).limit(2)
 db.users.find({ name: 'John' })
 
 db.users.find({name : "Sally"}, {address: 0, age: 0})
+
+db.users.find({ name: { $eq: "Sally" }})
+
+db.users.find({ name: { $neq: "Sally" }})
+
+db.users.find({age : { $gt: 13 }})
+
+db.users.find(age : { $lt: 13 })
+
+db.users.find({name : { $in: ["Kyle", "Sally" ] }})
+
+db.users.find({name : { $nin: ["Kyle", "Sally" ] }})
+
+{$exist: true}
+
+{$exist: false}
+
+db.users.insertOne({age: null, name: "Bill"})
+
+db.users.find({age: { $gte: 20, $lte: 40 }})
+
+db.users.find({age: { $gte: 20, $lte: 40}, name: "Sally"})
+
+db.users({$and: [{age: 26}, {name: "Kyle"}]})
+
+db.users.find({
+
+	$and : [
+		{age: { $lte: 20} },
+		{name: "Kyle"}
+	]
+})
+
+db.users.find({age: {$not: {$lte : 20 }}))
+
+
+db.users.insertMany([{name :"Asdf"}, {second: "asdfsd"}])
+
+$expr:
+
+db.users.findOne({age: {$lte: 40}})
+
+db.users.countDocuments({age: {$lte: 40})
+
+db.users.updateOne({age: 26}, { age: 27 })
+db.users.updateOne({age: 26}, { $set: {age: 27}})
+ 
+$set
+$inc
+$rename
+$unset
+$push
+
+cls
+$pull 
+$exists
+
+db.users.replaceOne({ age : 30 }, { name: "John" })
+
+update is used more because you dont want to replace everything
+
+
+db.users.deleteOne({})
+
+db.users.deleteMany({age: { $exists: false }})
+
+
+
+
+

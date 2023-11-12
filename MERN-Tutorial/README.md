@@ -9,3 +9,11 @@
 - go to frontend part first then install ( npm i react-router-dom )
 
 - go to frontend part first then install ( npm i react-icons )
+
+
+- to both run frontend and backend
+- npm i -D concurrently
+
+- (add inside package.json outside of both backend/frontend folder > scripts) "dev": "concurrently \"npm run server\" \"npm run client\" "
+
+- npm i axios react-toastify

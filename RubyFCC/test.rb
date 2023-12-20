@@ -29,3 +29,23 @@ puts states
 puts states["New York"]
 puts states[:Philippines]
 puts states[1]
+
+
+=begin
+    method - block of code that do specific tasks to us
+    similar to function in javascript
+=end
+puts "--------------------------------------"
+def sayhi
+    puts "Hello User"
+end
+
+sayhi
+
+# has parameters inside sayhello
+# can be given default value to parameter variable
+def say_hello(name, age = 24)
+    puts "Hello " + name + ", you are " + age.to_s
+end
+
+say_hello("Aubrey")

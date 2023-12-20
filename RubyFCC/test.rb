@@ -49,3 +49,14 @@ def say_hello(name, age = 24)
 end
 
 say_hello("Aubrey")
+
+
+=begin
+    Return Statement / Keyword
+=end
+puts "--------------------------------------"
+def cube(num)
+    return num * num * num, 70
+end
+
+puts cube(3)

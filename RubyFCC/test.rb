@@ -60,3 +60,23 @@ def cube(num)
 end
 
 puts cube(3)
+
+
+=begin
+    if Statement
+=end
+puts "--------------------------------------"
+
+ismale = true
+istall = false
+
+# Logical operators (or, and, not) or (||, &&, !)
+if ismale and istall
+    puts "You are a tall male"
+elsif ismale and not istall
+    puts "You are a short male"
+elsif not ismale and istall
+    puts "You are not male but are tall"
+else 
+    puts "You are not male and not tall"
+end

@@ -80,3 +80,23 @@ elsif not ismale and istall
 else 
     puts "You are not male and not tall"
 end
+
+# part 2 using comparison
+def highest(array)
+    return array.sort.last
+end
+
+multiple_array = [1,35,634,234,123,50,62]
+puts highest(multiple_array)
+
+def max(num1, num2, num3)
+    if num1 >= num2 and num1 >= num3
+        return num1
+    elsif num2 >= num1 and num2 >= num3
+        return num2
+    else
+        return num3
+    end
+end
+
+puts max(5, 2, 3)

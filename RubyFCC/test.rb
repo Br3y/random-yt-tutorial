@@ -3,20 +3,16 @@ friends = Array["Kevin", "Karen", "Oscar"]
 puts friends[0]
 puts friends[0]
 puts "#{friends[0,2]}"
-
 new_friends = Array.new
 new_friends[0] = "Michael"
 new_friends[5] = "Holly"
 puts new_friends
-
 # methods
 # .length, .include?, .reverse, .sort
 # you cant sort string and number together inside array
 
 
-=begin
-    hashes - like dictionaries that have ( key => value )
-=end
+# hashes - like dictionaries that have ( key => value )
 puts "--------------------------------------"
 states = {
     "Pennsylvania" => "PA",
@@ -39,15 +35,12 @@ puts "--------------------------------------"
 def sayhi
     puts "Hello User"
 end
-
 sayhi
-
 # has parameters inside sayhello
 # can be given default value to parameter variable
 def say_hello(name, age = 24)
     puts "Hello " + name + ", you are " + age.to_s
 end
-
 say_hello("Aubrey")
 
 
@@ -58,7 +51,6 @@ puts "--------------------------------------"
 def cube(num)
     return num * num * num, 70
 end
-
 puts cube(3)
 
 
@@ -66,10 +58,8 @@ puts cube(3)
     if Statement
 =end
 puts "--------------------------------------"
-
 ismale = true
 istall = false
-
 # Logical operators (or, and, not) or (||, &&, !)
 if ismale and istall
     puts "You are a tall male"
@@ -80,12 +70,10 @@ elsif not ismale and istall
 else 
     puts "You are not male and not tall"
 end
-
 # part 2 using comparison
 def highest(array)
     return array.sort.last
 end
-
 multiple_array = [1,35,634,234,123,50,62]
 puts highest(multiple_array)
 
@@ -98,5 +86,4 @@ def max(num1, num2, num3)
         return num3
     end
 end
-
 puts max(5, 2, 3)

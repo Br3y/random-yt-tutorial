@@ -89,7 +89,7 @@ end
 puts max(5, 2, 3)
 
 
-# Case Expressions =
+# Case Expressions
 puts "--------------------------------------"
 def get_day_name(day)
     day_name = ""
@@ -114,6 +114,15 @@ def get_day_name(day)
     end
     return day_name
 end
-
 puts get_day_name("mon")
 puts get_day_name("sut")
+
+
+# While Loops
+# avoid infinite loop
+puts "--------------------------------------"
+index = 1
+while index <= 5
+    puts index
+    index += 1
+end  

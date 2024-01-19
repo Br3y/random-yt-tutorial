@@ -87,3 +87,33 @@ def max(num1, num2, num3)
     end
 end
 puts max(5, 2, 3)
+
+
+# Case Expressions =
+puts "--------------------------------------"
+def get_day_name(day)
+    day_name = ""
+
+    case day
+    when "mon"
+        day_name = "monday"
+    when "tue"
+        day_name = "tuesday"
+    when "wed"
+        day_name = "wednesday"
+    when "thu"
+        day_name = "thursday"
+    when "fri"
+        day_name = "friday"
+    when "sat"
+        day_name = "saturday"
+    when "sun"
+        day_name = "sunday"
+    else
+        day_name = "Invalid abbrevation"
+    end
+    return day_name
+end
+
+puts get_day_name("mon")
+puts get_day_name("sut")

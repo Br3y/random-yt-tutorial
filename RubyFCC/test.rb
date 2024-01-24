@@ -156,3 +156,14 @@ def pow(base_num, pow_num)
     return result
 end
 puts pow(5, 3)
+
+
+# Two types of Comments
+puts "--------------------------------------"
+puts "Single line of comment => #"
+# sample-sample
+puts "Multiple line of comments => =begin =end"
+=begin
+    sample
+    sample
+=end

@@ -1,2 +1,5 @@
 Jim, Sales
 Andy, Sales
+Kelly, Customer Service
+Creed, Quality Assurance
+Michael, Manager

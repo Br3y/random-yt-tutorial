@@ -167,3 +167,17 @@ puts "Multiple line of comments => =begin =end"
     sample
     sample
 =end
+
+
+# Handling Errors
+puts "--------------------------------------"
+# lucky_nums = [4, 8, 15, 16, 23, 42]
+# num = 10 / 0
+begin
+    lucky_nums = [4, 8, 15, 16, 23, 42]
+    num = 10 / 0
+rescue ZeroDivisionError => e
+    puts e.to_s + " error"
+rescue TypeError => e
+    puts e
+end

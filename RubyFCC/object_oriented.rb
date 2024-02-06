@@ -70,3 +70,25 @@ italian_chef = ItalianChef.new
 italian_chef.make_salad
 italian_chef.make_special_dish
 italian_chef.make_pasta
+
+
+# Module
+puts "--------------------------------------"
+module Tools
+
+  def sayhi(name)
+    puts "hello #{name}"
+  end
+
+  def saybye(name)
+    puts "bye #{name}"
+  end
+
+end
+
+# mostly input inside class
+include Tools
+Tools.sayhi("bry")
+
+# can be called inside oop_extended_file
+# using require_relative "<your_file.rb>"

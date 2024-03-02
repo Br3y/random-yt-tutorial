@@ -1,3 +1,3 @@
-# travsCrashCourse
+# Random Youtube Tutorials/Lessons
 
-# this is to learn from traversy media crash course and to absorb different types information for full stack web development
+- This is to learn everything I'm interested in related to Development or Software Engineering

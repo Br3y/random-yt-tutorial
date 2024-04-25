@@ -85,3 +85,25 @@
 // let result = 1 + 2 * 3 + 4 ** 2
 
 // console.log(result)
+
+
+
+// How to accept user input
+// 1. EASY WAY = window prompt
+// 2. PROFESSIONAL WAY = HTML textbox
+
+// let username = window.prompt("What's your username?")
+// console.log(username)
+
+// let username 
+// document.getElementById("mySubmit").onclick = function(){
+//   username = document.getElementById("myText").value
+//   console.log(username)
+//   document.getElementById("myH1").textContent = `Hello ${username}`
+// }
+
+// let username = document.getElementById("myText")
+// document.getElementById("mySubmit").addEventListener("click", ()=>{
+//   console.log(username.value)
+//   document.querySelector("#myH1").textContent = `Hello ${username.value}`
+// })

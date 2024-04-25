@@ -52,3 +52,36 @@
 // document.querySelector("#p1").textContent = "my name is " + fullName
 // document.getElementById("p2").textContent = "my age is " + age
 // document.getElementById("p3").textContent = `Enrolled: ${student}`
+
+
+
+/*
+  arithmatic operators = operands (values, variables, etc/)
+                         operators ( + - * / )
+                         ex. 11 = x + 5
+*/
+
+// let students = 30
+
+// // students += 1
+// // students = students - 1
+// // students = students * 2
+// // students = students / 2
+// // students **= 2
+// // students = students % 2
+// // let extraStudents = students % 3
+// // students--;
+// // student++;
+
+// console.log(students)
+
+// /*
+//   operator precedence
+//   1. parenthesis
+//   2. exponents
+//   3. multiplication & division & modulo
+//   4. addition & subtraction
+// */
+// let result = 1 + 2 * 3 + 4 ** 2
+
+// console.log(result)
